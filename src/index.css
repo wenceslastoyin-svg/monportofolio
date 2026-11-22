@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e6ff;
+  --color-brand-200: #bcd3ff;
+  --color-brand-300: #8eb6ff;
+  --color-brand-400: #598eff;
+  --color-brand-500: #3366ff;
+  --color-brand-600: #1f47e6;
+  --color-brand-700: #1a37bf;
+  --color-brand-800: #1b3299;
+  --color-brand-900: #1c2f79;
+  --color-brand-950: #141d4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-700 antialiased;
+}
+
+/* Décalage pour la navigation fixe lors du scroll vers une section */
+section[id] {
+  scroll-margin-top: 5rem;
+}
